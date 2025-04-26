@@ -12,7 +12,9 @@ FastXP | Spam XP really fast to repair your armour, same as using Fast Use but o
 
 ## Installing
 Go to releases and get the newest .JAR
+
 Download MaLiLib and Litematica
+
 Put all three mods + meteor into your mods folder
 
 ## Features (coming soon)
