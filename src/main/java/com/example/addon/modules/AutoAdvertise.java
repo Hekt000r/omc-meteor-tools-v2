@@ -33,9 +33,16 @@ public class AutoAdvertise extends Module {
         .sliderMax(600000)
         .build()
     );
+    private final Setting<Boolean> antiSpamMute = sgGeneral.add(new BoolSetting.Builder()
+        .name("anti-spam-mute")
+        .description("Append a random 6-letter string to each message to avoid chat filters.")
+        .defaultValue(false)
+        .build()
+    );
 
     private final Random random = new Random();
     private long lastMessageTime = 0;
+    private static final String LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
     public AutoAdvertise() {
         super(AddonTemplate.CATEGORY, "Auto-advertise",
@@ -49,7 +56,17 @@ public class AutoAdvertise extends Module {
 
         List<String> list = messages.get();
         if (!list.isEmpty()) {
-            String msg = list.get(random.nextInt(list.size()));
+            String baseMsg = list.get(random.nextInt(list.size()));
+            String msg = baseMsg;
+
+            if (antiSpamMute.get()) {
+                StringBuilder suffix = new StringBuilder();
+                for (int i = 0; i < 6; i++) {
+                    suffix.append(LETTERS.charAt(random.nextInt(LETTERS.length())));
+                }
+                msg = baseMsg + " " + suffix.toString();
+            }
+
             ChatUtils.sendPlayerMsg(msg);
             lastMessageTime = now;
         }
