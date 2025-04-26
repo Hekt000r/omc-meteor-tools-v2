@@ -8,6 +8,12 @@ Auto-Advertising | Lets you advertise in the chat with a delay and multiple mess
 ## Features (coming soon)
 
 Meteor-Litematica-Printer (new) | A copy of the litematica printer module from Meteor-Litematica-Printer but its updated for 1.21.5
+
 Auto-Wither | Taken from Meteor Rejects
-MessageAura | When a player enters into a configurable distance, you can automatically send them a message.
+
+WhisperAura | When a player enters into a configurable distance, you can automatically send them a whisper. (like message aura but with multiple messages)
+
 and much more
+
+## Credits
+[Meteor Client repo, some of its code was taken for the Auto-Advertising feature](https://github.com/MeteorDevelopment/meteor-client/blob/master/src/main/java/meteordevelopment/meteorclient/systems/macros/Macro.java)
