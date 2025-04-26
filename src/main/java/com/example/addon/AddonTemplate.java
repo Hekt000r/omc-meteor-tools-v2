@@ -3,6 +3,7 @@ package com.example.addon;
 import com.example.addon.commands.CommandExample;
 import com.example.addon.hud.HudExample;
 import com.example.addon.modules.AutoAdvertise;
+import com.example.addon.modules.LitematicaPrinter;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -24,6 +25,11 @@ public class AddonTemplate extends MeteorAddon {
 
         // Modules
         Modules.get().add(new AutoAdvertise());
+        try {
+            Modules.get().add(new LitematicaPrinter());
+        } catch (Exception e) {
+            LOG.error("Failed to initialize LitematicaPrinter module", e);
+        }
 
         // Commands
         Commands.add(new CommandExample());

@@ -17,6 +17,8 @@ repositories {
         name = "meteor-maven-snapshots"
         url = uri("https://maven.meteordev.org/snapshots")
     }
+    maven("https://masa.dy.fi/maven")
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -25,8 +27,16 @@ dependencies {
     mappings("net.fabricmc:yarn:${properties["yarn_mappings"] as String}:v2")
     modImplementation("net.fabricmc:fabric-loader:${properties["loader_version"] as String}")
 
+
+
+
     // Meteor
     modImplementation("meteordevelopment:meteor-client:${properties["minecraft_version"] as String}-SNAPSHOT")
+
+    //litematica
+    modImplementation("com.github.sakura-ryoko:malilib:1.21.5-0.24.0-sakura.8")
+    modImplementation("com.github.sakura-ryoko:litematica:1.21.5-0.22.0-sakura.7")
+
 }
 
 tasks {

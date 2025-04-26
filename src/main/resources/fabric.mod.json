@@ -24,7 +24,8 @@
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "addon-template.mixins.json",
+    "player-inventory-accessor.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"
@@ -32,6 +33,8 @@
   "depends": {
     "java": ">=21",
     "minecraft": ["${mc_version}"],
-    "meteor-client": "*"
+    "meteor-client": "*",
+    "malilib": "*",
+    "litematica": "*"
   }
 }
