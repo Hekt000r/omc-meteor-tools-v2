@@ -11,10 +11,16 @@
     "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
   },
   "icon": "assets/template/icon.png",
-  "environment": "client",
+    "environment": "client",
   "entrypoints": {
     "meteor": [
       "com.example.addon.AddonTemplate"
+    ],
+    "meteor-client-modules": [
+      {
+        "value": "com.example.addon.modules.AutoAdvertise",
+        "environment": "client"
+      }
     ]
   },
   "mixins": [
