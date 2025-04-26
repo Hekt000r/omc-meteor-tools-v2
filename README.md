@@ -11,7 +11,7 @@ Auto-Wither | Automatically builds withers. [Meteor Rejects (updated for 1.21.5 
 FastXP | Spam XP really fast to repair your armour, same as using Fast Use but only effects XP. [Blackout](https://github.com/KassuK1/BlackOut)
 
 ## Installing
-Go to releases and get the newest .JAR
+Go to releases and find the newest release, at the bottom there will be a link to a ZIP file. Extract it.
 
 Download MaLiLib and Litematica
 
