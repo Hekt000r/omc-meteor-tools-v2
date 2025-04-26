@@ -1,6 +1,5 @@
 # OMC Meteor Tools
 A collection of meteor modules for my team (but also for others) designed to help and assist in advertising and making projects on 6b6t.
-I like to call it a "collection" rather than an addon on its own since over half of the code is either ported from other clients or other addons
 
 ## Features and credits (current)
 Auto-Advertising | Lets you advertise in the chat with a delay and multiple messages, like the Macro function in meteor but you dont have to keep pressing the button| [Meteor Client Macro Feature (some of its code)](https://github.com/MeteorDevelopment/meteor-client/blob/master/src/main/java/meteordevelopment/meteorclient/systems/macros/Macro.java)
