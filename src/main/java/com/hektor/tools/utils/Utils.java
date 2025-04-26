@@ -1,9 +1,9 @@
-package com.example.addon.utils;
+package com.hektor.tools.utils;
 
 import meteordevelopment.meteorclient.utils.player.Rotations;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
-import com.example.addon.utils.rotation.Rotation;
-import com.example.addon.utils.rotation.RotationUtils;
+import com.hektor.tools.utils.rotation.Rotation;
+import com.hektor.tools.utils.rotation.RotationUtils;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.block.enums.SlabType;

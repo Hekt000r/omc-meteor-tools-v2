@@ -1,4 +1,4 @@
-package com.example.addon.utils.rotation;
+package com.hektor.tools.utils.rotation;
 
 public class Rotation {
     private final float yaw;

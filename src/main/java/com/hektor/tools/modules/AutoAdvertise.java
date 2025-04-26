@@ -1,6 +1,6 @@
-package com.example.addon.modules;
+package com.hektor.tools.modules;
 
-import com.example.addon.AddonTemplate;
+import com.hektor.tools.OMCTools;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import meteordevelopment.meteorclient.events.world.TickEvent;
@@ -45,7 +45,7 @@ public class AutoAdvertise extends Module {
     private static final String LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
     public AutoAdvertise() {
-        super(AddonTemplate.CATEGORY, "Auto-advertise",
+        super(OMCTools.CATEGORY, "Auto-advertise",
             "Automatically sends messages to the chat when the keybind is pressed.");
     }
 

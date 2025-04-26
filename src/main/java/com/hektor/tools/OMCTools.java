@@ -1,11 +1,11 @@
-package com.example.addon;
+package com.hektor.tools;
 
-import com.example.addon.commands.CommandExample;
-import com.example.addon.hud.HudExample;
-import com.example.addon.modules.AutoAdvertise;
-import com.example.addon.modules.AutoWither;
-import com.example.addon.modules.FastXP;
-import com.example.addon.modules.LitematicaPrinter;
+import com.hektor.tools.commands.CommandExample;
+import com.hektor.tools.hud.HudExample;
+import com.hektor.tools.modules.AutoAdvertise;
+import com.hektor.tools.modules.AutoWither;
+import com.hektor.tools.modules.FastXP;
+import com.hektor.tools.modules.LitematicaPrinter;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -16,10 +16,10 @@ import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
 import org.slf4j.Logger;
 
-public class AddonTemplate extends MeteorAddon {
+public class OMCTools extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Example");
-    public static final HudGroup HUD_GROUP = new HudGroup("Example");
+    public static final Category CATEGORY = new Category("OMC Tools");
+    public static final HudGroup HUD_GROUP = new HudGroup("OMC Tools");
 
     @Override
     public void onInitialize() {
@@ -44,11 +44,11 @@ public class AddonTemplate extends MeteorAddon {
 
     @Override
     public String getPackage() {
-        return "com.example.addon";
+        return "com.hektor.tools";
     }
 
     @Override
     public GithubRepo getRepo() {
-        return new GithubRepo("MeteorDevelopment", "meteor-addon-template");
+        return new GithubRepo("Hekt000r", "omc-meteor-tools-v2");
     }
 }

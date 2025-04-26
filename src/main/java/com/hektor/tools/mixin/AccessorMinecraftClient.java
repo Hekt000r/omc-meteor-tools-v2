@@ -1,4 +1,4 @@
-package com.example.addon.mixin;
+package com.hektor.tools.mixin;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

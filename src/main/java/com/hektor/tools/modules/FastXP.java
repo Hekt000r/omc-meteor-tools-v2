@@ -1,7 +1,7 @@
-package com.example.addon.modules;
+package com.hektor.tools.modules;
 
-import com.example.addon.AddonTemplate;
-import com.example.addon.mixin.AccessorMinecraftClient;
+import com.hektor.tools.OMCTools;
+import com.hektor.tools.mixin.AccessorMinecraftClient;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.settings.*;
 import meteordevelopment.meteorclient.systems.modules.Module;
@@ -16,7 +16,7 @@ import net.minecraft.item.Items;
 
 public class FastXP extends Module {
     public FastXP() {
-        super(AddonTemplate.CATEGORY, "Fast XP", "XP spamming moment.");
+        super(OMCTools.CATEGORY, "Fast XP", "XP spamming moment.");
     }
 
     private final SettingGroup sgGeneral = settings.getDefaultGroup();

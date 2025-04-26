@@ -1,4 +1,4 @@
-package com.example.addon.utils.rotation;
+package com.hektor.tools.utils.rotation;
 
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.util.hit.HitResult;

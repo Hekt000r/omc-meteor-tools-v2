@@ -1,6 +1,6 @@
-package com.example.addon.modules;
+package com.hektor.tools.modules;
 
-import com.example.addon.AddonTemplate;
+import com.hektor.tools.OMCTools;
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.renderer.ShapeMode;
@@ -117,7 +117,7 @@ public class AutoWither extends Module {
     private int witherTicksWaited, blockTicksWaited;
 
     public AutoWither() {
-        super(AddonTemplate.CATEGORY, "auto-wither", "Automatically builds withers.");
+        super(OMCTools.CATEGORY, "auto-wither", "Automatically builds withers.");
     }
 
     @Override

@@ -1,24 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "omc-tools",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Occulated Moon Clan Tools",
+  "description": "A meteor addon that adds several useful features.",
   "authors": [
-    "seasnail"
+    "hekt0r_"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/Hekt000r/omc-meteor-tools-v2/"
   },
   "icon": "assets/template/icon.png",
     "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.hektor.tools.OMCTools"
     ],
     "meteor-client-modules": [
       {
-        "value": "com.example.addon.modules.AutoAdvertise",
+        "value": "com.hektor.tools.modules.AutoAdvertise",
+        "environment": "client"
+      },
+      {
+        "value": "com.hektor.tools.modules.AutoWither",
+        "environment": "client"
+      },
+      {
+        "value": "com.hektor.tools.modules.FastXP",
+        "environment": "client"
+      },
+      {
+        "value": "com.hektor.tools.modules.LitematicaPrinter",
         "environment": "client"
       }
     ]
@@ -29,7 +41,7 @@
     "accessor-minecraft-client.mixins.json"
   ],
   "custom": {
-    "meteor-client:color": "225,25,25"
+    "meteor-client:color": "60,25,115"
   },
   "depends": {
     "java": ">=21",

@@ -1,4 +1,4 @@
-package com.example.addon.modules;
+package com.hektor.tools.modules;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -28,9 +28,9 @@ import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.meteorclient.utils.world.BlockIterator;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 import meteordevelopment.orbit.EventHandler;
-import com.example.addon.AddonTemplate;
-import com.example.addon.mixin.PlayerInventoryAccessor;
-import com.example.addon.utils.Utils;
+import com.hektor.tools.OMCTools;
+import com.hektor.tools.mixin.PlayerInventoryAccessor;
+import com.hektor.tools.utils.Utils;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.enums.BlockHalf;
@@ -201,7 +201,7 @@ public class LitematicaPrinter extends Module {
     // https://github.com/CCBlueX/LiquidBounce/blob/nextgen/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationsUtil.kt#L257
 
     public LitematicaPrinter() {
-        super(AddonTemplate.CATEGORY, "litematica-printer", "Automatically prints open schematics");
+        super(OMCTools.CATEGORY, "litematica-printer", "Automatically prints open schematics");
     }
 
     @Override
