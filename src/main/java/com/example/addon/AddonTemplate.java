@@ -4,6 +4,7 @@ import com.example.addon.commands.CommandExample;
 import com.example.addon.hud.HudExample;
 import com.example.addon.modules.AutoAdvertise;
 import com.example.addon.modules.AutoWither;
+import com.example.addon.modules.FastXP;
 import com.example.addon.modules.LitematicaPrinter;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
@@ -28,6 +29,7 @@ public class AddonTemplate extends MeteorAddon {
         Modules.get().add(new AutoAdvertise());
         Modules.get().add(new LitematicaPrinter());
         Modules.get().add(new AutoWither());
+        Modules.get().add(new FastXP());
         // Commands
         Commands.add(new CommandExample());
 

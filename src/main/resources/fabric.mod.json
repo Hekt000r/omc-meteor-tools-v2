@@ -25,7 +25,8 @@
   },
   "mixins": [
     "addon-template.mixins.json",
-    "player-inventory-accessor.mixins.json"
+    "player-inventory-accessor.mixins.json",
+    "accessor-minecraft-client.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"
