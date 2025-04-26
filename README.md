@@ -6,11 +6,9 @@ I like to call it a "collection" rather than an addon on its own since over half
 Auto-Advertising | Lets you advertise in the chat with a delay and multiple messages, like the Macro function in meteor but you dont have to keep pressing the button
 
 Meteor-Litematica-Printer (new) | A copy of the litematica printer module from Meteor-Litematica-Printer but its updated for 1.21.5
+
+Auto-Wither | Automatically builds withers. Taken from meteor rejects (who took it from an unmerged PR.)
 ## Features (coming soon)
-
-
-
-Auto-Wither | Taken from Meteor Rejects
 
 WhisperAura | When a player enters into a configurable distance, you can automatically send them a whisper. (like message aura but with multiple messages)
 
